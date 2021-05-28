@@ -1,0 +1,27 @@
+.plan__cards--container, .main__tables__container {
+    justify-content: center;
+    margin: 0;
+}
+.main--table {
+    margin-right: 0%;
+}
+.plan__info-card--container {
+    margin: 30px 15px 30px 15px;
+    min-width: 0;
+}
+.benefits__article {
+    width: 43%;
+    margin: 10px ;
+}
+footer {
+    flex-direction: column-reverse;
+}
+.main__link-footer--container {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+}
+.plan-img--container {
+    height: 450px;
+}
