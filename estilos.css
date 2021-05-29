@@ -13,7 +13,8 @@
   --secondary-blue: #1a9af7;
   --soft-blue     : #e7f5ff;
   --warm-black    : #201e1c;
-  --black         : #282623;
+  --black         : #161514;
+  --dark-grey     : #4e4e4e;
   --grey          : #bababa;
   --off-white     : #e5e5e5;
   --just-white    : #fff;
@@ -28,7 +29,8 @@ html {
   font-size  : 62.5%;
   font-family: "DM Sans", sans-serif;
   min-width  : 320px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
 }
 
 /*               */
@@ -156,16 +158,15 @@ main {
   font-size  : 1.4rem;
   font-weight: 500;
   line-height: 1.6rem;
-  color      : #757575;
+  color      : var(--dark-grey);
 }
 
 .main--table {
   display       : flex;
   flex-direction: column;
   align-items   : center;
-  min-width     : 234px;
+  min-width     : 260px;
   margin-bottom : 20px;
-  margin-right  : 20px;
 }
 
 .table--title {
@@ -200,13 +201,13 @@ table tr td {
   font-weight     : 500;
   font-size       : 1.7rem;
   line-height     : 19.36px;
-  color           : #b5b0ac;
+  color           : var(--dark-grey);
 }
 
 .table__right {
   font-size      : 1.4rem;
   font-weight    : 500;
-  color          : #757575;
+  color          : var(--dark-grey);
   display        : flex;
   align-items    : center;
   justify-content: space-evenly;
@@ -339,15 +340,15 @@ table tr td {
 
 .plan--subtitle {
   font-size: 1.4rem;
-  color    : #757575;
+  color    : var(--dark-grey);
 }
 
 .plan__cards--container {
-  margin: 0 calc(50% - 125px);
+  margin: 0 calc(50% - 140px);
 }
 
 .main__tables__container {
-  margin: 5px calc(50% - 117px);
+  margin: 5px calc(50% - 130px);
 }
 
 .plan__cards--container,
@@ -357,6 +358,7 @@ table tr td {
   overscroll-behavior-x: contain;
   scroll-snap-type     : x proximity;
   filter               : drop-shadow(0 4px 8px rgba(89, 73, 30, 0.3));
+  gap: 50px;
 }
 
 .plan__cards--container::-webkit-scrollbar-thumb {
@@ -378,8 +380,8 @@ table tr td {
   flex-direction   : column;
   align-items      : center;
   padding          : 25px 10px;
-  margin           : 30px 30px 30px 0;
-  min-width        : 230px;
+  margin           : 30px 0;
+  min-width        : 260px;
   height           : auto;
   background-color : var(--just-white);
   border-radius    : 15px;
@@ -417,7 +419,7 @@ table tr td {
 
 .plan-info--saving {
   text-align: center;
-  color     : #757575;
+  color     : var(--dark-grey);
   font-size : 1.2rem;
 }
 
@@ -441,7 +443,7 @@ footer {
   height          : 120px;
   background-color: var(--bitcoin-orange);
   display         : flex;
-  justify-content : space-evenly;
+  justify-content : space-around;
   align-items     : center;
 }
 
